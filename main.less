@@ -2,7 +2,7 @@
 @header-color: #3F51B5;
 @header-text-color: white;
 
-@text-padding: 1em;
+@text-padding: 2em;
 
 /*
 Typography
@@ -67,15 +67,28 @@ body {
 
 .container {
     width: 900px;
+
     background-color: #FFFFFF;
+
     margin-left: auto;
     margin-right: auto;
+
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.2s ease-in-out;
 
     &:hover {
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
+
+    #material > .body;
+}
+
+h1 {
+    #material > .display1;
+}
+
+h2 {
+    #material > .headline;
 }
 
 /*
@@ -88,10 +101,6 @@ header
     padding-left: @text-padding;
     padding-right: @text-padding;
     overflow: hidden;
-
-    h1 {
-        #material > .display1;
-    }
 
     small {
         font-size: 65%;
@@ -106,4 +115,14 @@ Content
     padding-left: @text-padding;
     padding-right: @text-padding;
     padding-bottom: @text-padding;
+
+    hr {
+        margin-top: 1.5em;
+        margin-left: -@text-padding;
+        margin-right: -@text-padding;
+
+        border: 0;
+        height: 1px;
+        background: #E0E0E0;
+    }
 }
