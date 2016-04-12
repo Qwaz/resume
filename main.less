@@ -1,3 +1,5 @@
+@infinite: 999px;
+
 @body-color: #F2F1EF;
 @header-color: #3F51B5;
 @header-text-color: white;
@@ -62,7 +64,6 @@ Base design
 */
 body {
     background-color: @body-color;
-    padding-top: 20px;
 }
 
 .container {
@@ -70,8 +71,7 @@ body {
 
     background-color: #FFFFFF;
 
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto 50px auto;
 
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.2s ease-in-out;
@@ -91,6 +91,82 @@ h2 {
     #material > .headline;
 }
 
+h3 {
+    #material > .title;
+}
+
+h4 {
+    #material > .subheading;
+    margin-bottom: 0.4em;
+}
+
+h5 {
+    #material > .body-bold;
+    margin-top: 0.8em;
+    margin-bottom: 0;
+}
+
+a {
+    color: #1976D2;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+small.date {
+    font-size: 12px;
+    font-weight: 500;
+    color: fade(black, 55%);
+}
+
+/*
+chips
+*/
+span {
+    &.chip {
+        background-color: #757575;
+        color: white;
+
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+        padding: 0.2em 0.7em;
+
+        font-size: 11px;
+        font-weight: 500;
+
+        border-radius: @infinite;
+        text-transform: uppercase;
+    }
+
+    &.chip-yellow {
+        &:extend(span.chip);
+        background-color: #FFEB3B;
+        color: black;
+    }
+
+    &.chip-indigo {
+        &:extend(span.chip);
+        background-color: #5C6BC0;
+    }
+
+    &.chip-green {
+        &:extend(span.chip);
+        background-color: #0097A7;
+    }
+
+    &.chip-blue {
+        &:extend(span.chip);
+        background-color: #0288D1;
+    }
+
+    &.chip-purple {
+        &:extend(span.chip);
+        background-color: #AB47BC;
+    }
+}
+
 /*
 header
 */
@@ -103,8 +179,7 @@ header
     overflow: hidden;
 
     small {
-        font-size: 65%;
-        color: darken(@header-text-color, 10%);
+        color: fade(@header-text-color, 80%);
     }
 }
 
@@ -124,5 +199,25 @@ Content
         border: 0;
         height: 1px;
         background: #E0E0E0;
+    }
+
+    > ul {
+        > li {
+            margin: 0 0 1.4em;
+        }
+
+        ul {
+            padding-left: 1em;
+            list-style: none;
+
+            ul {
+                padding-left: 2em;
+                list-style: square;
+
+                li {
+                    margin: 0;
+                }
+            }
+        }
     }
 }
