@@ -57,6 +57,26 @@ Typography
         line-height: 20px;
         font-weight: 400;
     }
+
+    .shadow1 {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .shadow2 {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    .shadow3 {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    .shadow4 {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .shadow5 {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
 }
 
 /*
@@ -73,11 +93,10 @@ body {
 
     margin: 30px auto 50px auto;
 
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.2s ease-in-out;
-
+    #material > .shadow1;
     &:hover {
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        #material > .shadow3;
     }
 
     #material > .body;
@@ -113,6 +132,10 @@ a {
     &:hover {
         text-decoration: underline;
     }
+}
+
+i {
+    font-weight: 500;
 }
 
 /*
@@ -185,6 +208,8 @@ Content
     padding-left: @text-padding;
     padding-right: @text-padding;
     padding-bottom: @text-padding;
+
+    overflow: auto;
 
     hr {
         margin-top: 1.5em;
