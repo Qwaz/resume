@@ -205,11 +205,18 @@ header
 Content
 */
 .content {
+    position: relative;
+
     padding-left: @text-padding;
     padding-right: @text-padding;
     padding-bottom: @text-padding;
 
     overflow: auto;
+
+    p.notify {
+        position: absolute;
+        right: @text-padding;
+    }
 
     hr {
         margin-top: 1.5em;
