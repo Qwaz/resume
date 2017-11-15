@@ -5,34 +5,29 @@ Typography
 * {
   font-family: 'Roboto', sans-serif;
 }
-#material .display2 {
-  font-size: 45px;
-  line-height: 48px;
-  font-weight: 400;
-}
-#material .display1 {
+#material .display {
   font-size: 34px;
   line-height: 40px;
   font-weight: 400;
 }
 #material .headline {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 22px;
+  line-height: 28px;
   font-weight: 400;
 }
 #material .title {
-  font-size: 21px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 500;
 }
 #material .subheading {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
   font-weight: 400;
 }
 #material .body-bold {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
   font-weight: 500;
 }
 #material .body {
@@ -55,24 +50,51 @@ Typography
 #material .shadow5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
+.right {
+  float: right;
+}
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+@media screen {
+  .no-screen {
+    display: none;
+  }
+}
+.page-break {
+  page-break-before: always;
+}
 /*
 Base design
 */
-body {
-  background-color: #F2F1EF;
+@media screen {
+  body {
+    background-color: #F2F1EF;
+  }
 }
 .container {
   width: 900px;
   background-color: #FFFFFF;
   margin: 30px auto 50px auto;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
 }
-.container:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+@media print {
+  .container {
+    margin: 0 auto 0 auto;
+  }
+}
+@media screen {
+  .container {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  .container:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
 }
 h1 {
   font-size: 34px;
@@ -80,24 +102,20 @@ h1 {
   font-weight: 400;
 }
 h2 {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 22px;
+  line-height: 28px;
   font-weight: 400;
 }
 h3 {
-  font-size: 21px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 500;
+  margin-top: 0.7em;
+  margin-bottom: 0;
 }
 h4 {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  margin-bottom: 0.4em;
-}
-h5 {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
   font-weight: 500;
   margin-top: 0.8em;
   margin-bottom: 0;
@@ -166,32 +184,44 @@ Content
 */
 .content {
   position: relative;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 2em;
   overflow: auto;
 }
-.content p.notify {
-  position: absolute;
-  right: 2em;
+@media screen {
+  .content {
+    padding: 0 2em 0 2em;
+  }
+}
+@media print {
+  .content {
+    padding: 0 4em 0 4em;
+  }
 }
 .content hr {
-  margin-top: 1.5em;
-  margin-left: -2em;
-  margin-right: -2em;
+  margin: 1.5em -2em 1em -2em;
   border: 0;
   height: 1px;
   background: #E0E0E0;
 }
+.content strong {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);
+}
+.content > ul {
+  padding-left: 20px;
+  margin-top: 0.7em;
+}
 .content > ul > li {
-  margin: 0 0 1.4em;
+  margin: 0 0 1.1em;
+}
+.content > ul.dense > li {
+  margin: 0 0 0;
 }
 .content > ul ul {
-  padding-left: 1em;
+  padding-left: 0.5em;
   list-style: none;
 }
 .content > ul ul ul {
-  padding-left: 2em;
+  padding-left: 1em;
   list-style: square;
 }
 .content > ul ul ul li {
@@ -201,4 +231,17 @@ Content
   font-size: 12px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.55);
+}
+.content footer {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.55);
+  float: right;
+  text-align: center;
+  height: 3em;
+}
+@media print {
+  .content footer {
+    margin-right: -2em;
+  }
 }
