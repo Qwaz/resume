@@ -5,7 +5,6 @@
 @header-text-color: white;
 
 @text-padding: 2em;
-@print-padding: 4em;
 
 /*
 Typography
@@ -97,8 +96,8 @@ Typography
 /*
 Base design
 */
-@media screen {
-  body {
+body {
+  @media screen {
     background-color: @body-color;
   }
 }
@@ -207,8 +206,14 @@ span {
 header
 */
 .header {
-  background-color: @header-color;
-  color: @header-text-color;
+  @media screen {
+    background-color: @header-color;
+    color: @header-text-color;
+  }
+
+  @media print {
+    margin-bottom: -1.5em;
+  }
 
   padding-left: @text-padding;
   padding-right: @text-padding;
@@ -216,7 +221,10 @@ header
 
   small {
     font-size: 65%;
-    color: fade(@header-text-color, 80%);
+    color: fade(black, 80%);
+    @media screen {
+      color: fade(@header-text-color, 80%);
+    }
   }
 }
 
@@ -226,12 +234,7 @@ Content
 .content {
   position: relative;
 
-  @media screen {
-    padding: 0 @text-padding 0 @text-padding;
-  }
-  @media print {
-    padding: 0 @print-padding 0 @print-padding;
-  }
+  padding: 0 @text-padding 0 @text-padding;
   overflow: auto;
 
   hr {

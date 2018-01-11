@@ -169,32 +169,37 @@ span.chip-purple {
 header
 */
 .header {
-  background-color: #3F51B5;
-  color: white;
   padding-left: 2em;
   padding-right: 2em;
   overflow: hidden;
 }
+@media screen {
+  .header {
+    background-color: #3F51B5;
+    color: white;
+  }
+}
+@media print {
+  .header {
+    margin-bottom: -1.5em;
+  }
+}
 .header small {
   font-size: 65%;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+}
+@media screen {
+  .header small {
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
 /*
 Content
 */
 .content {
   position: relative;
+  padding: 0 2em 0 2em;
   overflow: auto;
-}
-@media screen {
-  .content {
-    padding: 0 2em 0 2em;
-  }
-}
-@media print {
-  .content {
-    padding: 0 4em 0 4em;
-  }
 }
 .content hr {
   margin: 1.5em -2em 1em -2em;
