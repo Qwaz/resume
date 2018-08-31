@@ -246,13 +246,24 @@ Content
   }
 
   strong {
-    font-weight: 500;
+    font-weight: bold;
+    font-style: italic;
     color: fade(black, 90%);
+  }
+
+  b {
+    font-weight: 500;
   }
 
   > ul {
     padding-left: 20px;
     margin-top: 0.7em;
+
+    &.no-dot {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 0 0;
+    }
 
     > li {
       margin: 0 0 1.1em;
@@ -267,7 +278,7 @@ Content
 
       ul {
         padding-left: 1em;
-        list-style: square;
+        margin-bottom: 0.4em;
 
         li {
           margin: 0;

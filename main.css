@@ -219,12 +219,21 @@ Content
   background: #E0E0E0;
 }
 .content strong {
-  font-weight: 500;
+  font-weight: bold;
+  font-style: italic;
   color: rgba(0, 0, 0, 0.9);
+}
+.content b {
+  font-weight: 500;
 }
 .content > ul {
   padding-left: 20px;
   margin-top: 0.7em;
+}
+.content > ul.no-dot {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 0;
 }
 .content > ul > li {
   margin: 0 0 1.1em;
@@ -238,7 +247,7 @@ Content
 }
 .content > ul ul ul {
   padding-left: 1em;
-  list-style: square;
+  margin-bottom: 0.4em;
 }
 .content > ul ul ul li {
   margin: 0;
