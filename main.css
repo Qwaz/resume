@@ -3,6 +3,12 @@ Typography
 */
 @font-face {
   font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51S7ACc6CsE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
@@ -116,6 +122,7 @@ h2 {
   font-size: 22px;
   line-height: 28px;
   font-weight: 400;
+  margin-bottom: 12px;
 }
 h3 {
   font-size: 16px;
@@ -137,9 +144,6 @@ a {
 }
 a:hover {
   text-decoration: underline;
-}
-i {
-  font-weight: 500;
 }
 /*
 chips
@@ -219,27 +223,32 @@ Content
   background: #E0E0E0;
 }
 .content strong {
-  font-weight: bold;
+  font-weight: 500;
   font-style: italic;
   color: rgba(0, 0, 0, 0.9);
 }
 .content b {
   font-weight: 500;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.9);
+}
+.content span.box {
+  display: inline-block;
+  vertical-align: top;
 }
 .content > ul {
   padding-left: 20px;
   margin-top: 0.7em;
 }
-.content > ul.no-dot {
-  list-style: none;
+.content > ul.dense {
   padding-left: 0;
+  list-style: none;
+}
+.content > ul.dense > li {
   margin: 0 0 0;
 }
 .content > ul > li {
   margin: 0 0 1.1em;
-}
-.content > ul.dense > li {
-  margin: 0 0 0;
 }
 .content > ul ul {
   padding-left: 0;
