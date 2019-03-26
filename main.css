@@ -2,10 +2,16 @@
 Typography
 */
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Lato';
   font-style: italic;
-  font-weight: 500;
-  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51S7ACc6CsE.ttf) format('truetype');
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v14/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v14/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
@@ -29,8 +35,9 @@ Typography
 }
 #material .headline {
   font-size: 22px;
-  line-height: 28px;
+  line-height: 32px;
   font-weight: 400;
+  color: #3F51B5;
 }
 #material .title {
   font-size: 16px;
@@ -120,9 +127,10 @@ h1 {
 }
 h2 {
   font-size: 22px;
-  line-height: 28px;
+  line-height: 32px;
   font-weight: 400;
-  margin-bottom: 12px;
+  color: #3F51B5;
+  margin-top: 24px;
 }
 h3 {
   font-size: 16px;
@@ -184,29 +192,15 @@ span.chip-purple {
 header
 */
 .header {
+  background-color: #3F51B5;
+  color: white;
   padding-left: 2em;
   padding-right: 2em;
   overflow: hidden;
 }
-@media screen {
-  .header {
-    background-color: #3F51B5;
-    color: white;
-  }
-}
-@media print {
-  .header {
-    margin-bottom: -1.5em;
-  }
-}
 .header small {
   font-size: 65%;
-  color: rgba(0, 0, 0, 0.8);
-}
-@media screen {
-  .header small {
-    color: rgba(255, 255, 255, 0.8);
-  }
+  color: rgba(255, 255, 255, 0.8);
 }
 /*
 Content
@@ -223,13 +217,19 @@ Content
   background: #E0E0E0;
 }
 .content strong {
-  font-weight: 500;
+  font-weight: 700;
   font-style: italic;
+  font-family: "Lato", serif;
   color: rgba(0, 0, 0, 0.9);
 }
 .content b {
   font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);
+}
+.content em {
+  font-weight: 400;
   font-style: italic;
+  font-family: "Lato", serif;
   color: rgba(0, 0, 0, 0.9);
 }
 .content span.box {

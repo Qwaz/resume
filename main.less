@@ -9,7 +9,7 @@
 /*
 Typography
 */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,500i);
+@import url('https://fonts.googleapis.com/css?family=Lato:400i,700i|Roboto:400,500');
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -24,8 +24,9 @@ Typography
 
   .headline {
     font-size: 22px;
-    line-height: 28px;
+    line-height: 32px;
     font-weight: 400;
+    color: @header-color;
   }
 
   .title {
@@ -129,7 +130,7 @@ h1 {
 
 h2 {
   #material > .headline;
-  margin-bottom: 12px;
+  margin-top: 24px;
 }
 
 h3 {
@@ -203,14 +204,8 @@ span {
 header
 */
 .header {
-  @media screen {
-    background-color: @header-color;
-    color: @header-text-color;
-  }
-
-  @media print {
-    margin-bottom: -1.5em;
-  }
+  background-color: @header-color;
+  color: @header-text-color;
 
   padding-left: @text-padding;
   padding-right: @text-padding;
@@ -218,10 +213,7 @@ header
 
   small {
     font-size: 65%;
-    color: fade(black, 80%);
-    @media screen {
-      color: fade(@header-text-color, 80%);
-    }
+    color: fade(@header-text-color, 80%);
   }
 }
 
@@ -243,14 +235,21 @@ Content
   }
 
   strong {
-    font-weight: 500;
+    font-weight: 700;
     font-style: italic;
+    font-family: "Lato", serif;
     color: fade(black, 90%);
   }
 
   b {
     font-weight: 500;
+    color: fade(black, 90%);
+  }
+
+  em {
+    font-weight: 400;
     font-style: italic;
+    font-family: "Lato", serif;
     color: fade(black, 90%);
   }
 
