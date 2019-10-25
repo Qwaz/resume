@@ -248,6 +248,9 @@ Content
 .content > ul.dense > li {
   margin: 0 0 0;
 }
+.content > ul.dense-bullet > li {
+  margin: 0 0 0;
+}
 .content > ul > li {
   margin: 0 0 1.1em;
 }
