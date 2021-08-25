@@ -5,25 +5,25 @@ Typography
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
 }
 * {
   font-family: 'Roboto', sans-serif;
@@ -237,29 +237,36 @@ Content
   display: inline-block;
   vertical-align: top;
 }
-.content > ul {
+.content > ul,
+.content ol {
   padding-left: 20px;
-  margin-top: 0.7em;
+  margin-top: 0.5em;
 }
-.content > ul.dense {
+.content > ul.dense,
+.content ol.dense {
   padding-left: 0;
   list-style: none;
 }
-.content > ul.dense > li {
-  margin: 0 0 0;
+.content > ul.dense > li,
+.content ol.dense > li {
+  margin: 0 0;
 }
-.content > ul > li {
+.content > ul > li,
+.content ol > li {
   margin: 0 0 1.1em;
 }
-.content > ul ul {
+.content > ul ul,
+.content ol ul {
   padding-left: 0;
   list-style: none;
 }
-.content > ul ul ul {
+.content > ul ul ul,
+.content ol ul ul {
   padding-left: 1em;
   margin-bottom: 0.4em;
 }
-.content > ul ul ul li {
+.content > ul ul ul li,
+.content ol ul ul li {
   margin: 0;
 }
 .content small {
@@ -280,4 +287,4 @@ Content
     margin-right: -2em;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=./main.css.map */
