@@ -238,35 +238,35 @@ Content
   vertical-align: top;
 }
 .content > ul,
-.content ol {
+.content > ol {
   padding-left: 20px;
   margin-top: 0.5em;
 }
 .content > ul.dense,
-.content ol.dense {
+.content > ol.dense {
   padding-left: 0;
   list-style: none;
 }
 .content > ul.dense > li,
-.content ol.dense > li {
+.content > ol.dense > li {
   margin: 0 0;
 }
 .content > ul > li,
-.content ol > li {
+.content > ol > li {
   margin: 0 0 1.1em;
 }
 .content > ul ul,
-.content ol ul {
+.content > ol ul {
   padding-left: 0;
   list-style: none;
 }
 .content > ul ul ul,
-.content ol ul ul {
+.content > ol ul ul {
   padding-left: 1em;
   margin-bottom: 0.4em;
 }
 .content > ul ul ul li,
-.content ol ul ul li {
+.content > ol ul ul li {
   margin: 0;
 }
 .content small {
