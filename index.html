@@ -13,7 +13,18 @@
     <div class="header">
         <h1>Yechan Bae<small class="right">yechan@gatech.edu</small></h1>
     </div>
+
     <div class="content">
+        <h2>Summary</h2>
+
+        <ul>
+            <li>My primary area of interest is <b>software security</b>. I'm especially interested in scalable vulnerability detection and abstraction recovery.</li>
+            <li>My daily programming language is Rust. In addition, I have in-depth project experience in C/C++, Python, TypeScript, and Java.</li>
+            <li>I have reported more than <a href="https://gts3.org/pages/cves.html">100 CVEs</a> in several Rust projects
+                including a few memory safety bugs <a href="https://github.com/Qwaz/rust-cve">in the Rust standard library</a> itself.</li>
+        </ul>
+
+        <hr>
         <h2>Education</h2>
 
         <h3>Georgia Institute of Technology <small>Aug. 2019 - present<span class="right">Atlanta, Georgia (United States)</span></small></h3>
@@ -28,23 +39,6 @@
             <li>B.S. in Creative IT Engineering</li>
             <li><strong>Summa Cum Laude</strong> and <strong>Valedictorian Honor</strong> (best GPA in class of 2019: 4.19 out of 4.3)</li>
         </ul>
-
-
-        <hr>
-        <h2>Research Interest</h2>
-
-        <h3>Scalable vulnerability detection</h3>
-        This topic is at the intersection of program analysis and software security, two fields that I have both enjoyed and excelled in.
-        Manual security auditing can find complicated new bugs, but it is hardly scalable in terms of time and human resource.
-        I'm extremely interested in automating such approach with fuzzing and static analysis,
-        so that we can prevent not only a single bug in a specific software
-        but also all bugs of the same class in all the current and the future software.
-
-        <h3>Abstraction Recovery</h3>
-        There is a huge gap between abstractions used in programming languages and machine code.
-        Typically, machine code does not contain any type information, struct definition, or inheritance hierarchy.
-        Furthermore, compilers might introduce additional disparity for optimization purpose.
-        Lost abstractions make understanding the core logic of programs harder, and reconstructing them can greatly help both human and machine analyzer.
 
 
         <hr>
@@ -70,19 +64,53 @@
         <h2>Work Experience</h2>
 
         <h3>Microsoft Research, <strong>Research Intern</strong> <small>May. 2020 - Aug. 2020<span class="right">Remote (United States)</span></small></h3>
-        Developed IoT smart space sharing solution with bare-metal provisioning, remote attestation, and cryptographic protocols
+        <ul>
+            <li>Participated in a project about secure IoT smart space sharing</li>
+            <li>Implemented bare-metal provisioning and remote attestation on U-Boot to support authenticated booting in ARM SoCs</li>
+        </ul>
 
         <h3>National Cancer Center, <strong>Research Assistant</strong> <small>Apr. 2019 - June 2019<span class="right">Goyang (South Korea)</span></small></h3>
-        Developed medical image segmentation for breast cancer biopsy robot control
+        <ul>
+            <li>Implemented DICOM medical image visualization and segmentation with Qt framework</li>
+            <li>Audited and refactored control code for breast cancer biopsy robot (C++)</li>
+        </ul>
 
         <h3>Oracle Labs Parallel Graph AnalytiX (PGX), <strong>Research Assistant</strong> <small>Feb. 2018 - June 2018<span class="right">Belmont, California (United States)</span></small></h3>
-        Developed IR based common execution backend for different query languages and runtimes supported by PGX
+        <ul>
+            <li>Developed shared IR execution engine for PGX single-machine (Java) and distributed (C++) runtime</li>
+            <li>Implemented parser, type checker, and expression evaluator for PGX query expressions with Spoofax language workbench</li>
+        </ul>
 
         <h3>POSTECH Database & Data Mining Lab, <strong>Undergraduate Intern</strong> <small>Winter 2016 - Spring 2017<span class="right">Pohang (South Korea)</span></small></h3>
-        Developed adaptive indexing method to improve performance of a graph database (advisor: <a href="https://sites.google.com/a/dblab.postech.ac.kr/postechdblab/home/people/professor-1">Wook-Shin Han</a>)
+        <ul>
+            <li>
+                Developed adaptive indexing method to improve performance of a graph database written in C++
+                (advisor: <a href="https://sites.google.com/a/dblab.postech.ac.kr/postechdblab/home/people/professor-1">Wook-Shin Han</a>)
+            </li>
+        </ul>
 
 
         <hr>
+        <h2>Research Interest</h2>
+
+        <h3>Scalable vulnerability detection</h3>
+        This topic is at the intersection of program analysis and software security, two fields that I have both enjoyed and excelled in.
+        Manual security auditing can find complicated new bugs, but it is hardly scalable in terms of time and human resource.
+        I'm extremely interested in automating such approach with fuzzing and static analysis,
+        so that we can prevent not only a single bug in a specific software
+        but also all bugs of the same class in all the current and the future software.
+
+        <h3>Abstraction Recovery</h3>
+        There is a huge gap between abstractions used in programming languages and machine code.
+        Typically, machine code does not contain any type information, struct definition, or inheritance hierarchy.
+        Furthermore, compilers might introduce additional disparity for optimization purpose.
+        Lost abstractions make understanding the core logic of programs harder, and reconstructing them can greatly help both human and machine analyzer.
+
+
+        <hr class="no-screen">
+
+
+        <hr class="page-break">
         <h2>Teaching Experience</h2>
 
         <ul class="dense">
@@ -97,10 +125,7 @@
         </ul>
 
 
-        <hr class="no-screen">
-
-
-        <hr class="page-break">
+        <hr>
         <h2>Honors and Awards</h2>
 
         <h3>Scholarship</h3>
@@ -139,9 +164,10 @@
             <li><b>Asia-Pacific Informatics Olympiad</b> Bronze Medal <small>2013</small></li>
         </ul>
 
+        I post my write-ups on <a href="https://github.com/Qwaz/solved-hacking-problem">GitHub</a>.
 
         <hr>
-        <footer>Updated at 2022-01-28<span class="no-screen">. Latest version is available <a href="https://qwaz.github.io/resume/">here</a>.</span>
+        <footer>Updated at 2022-01-31<span class="no-screen">. Online version is available <a href="https://qwaz.github.io/resume/">here</a>.</span>
         </footer>
     </div>
 </div>
