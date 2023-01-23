@@ -11,33 +11,45 @@
 <body>
 <div class="container">
     <div class="header">
-        <h1>Yechan Bae<small class="right">yechan@gatech.edu</small></h1>
+        <h1>Yechan Bae<small class="right">qwaz@theori.io</small></h1>
     </div>
 
     <div class="content">
-        <h2>Summary</h2>
+        <h2>Introduction</h2>
 
         <ul>
-            <li>My primary area of interest is <b>software security</b>. I'm especially interested in scalable vulnerability detection and abstraction recovery.</li>
+            <li>My primary area of interest is <b>software security</b>. I'm especially interested in <b>scalable vulnerability detection</b>.</li>
             <li>My daily programming language is Rust. In addition, I have in-depth project experience in C/C++, Python, TypeScript, and Java.</li>
             <li>I have reported more than <a href="https://gts3.org/pages/cves.html">100 CVEs</a> in several Rust projects
                 including a few memory safety bugs <a href="https://github.com/Qwaz/rust-cve">in the Rust standard library</a> itself.</li>
         </ul>
 
+
+        <hr>
+        <h2>Work Experience</h2>
+
+        <h3>Theori Korea, <strong>Staff Researcher</strong> <small>Sep. 2022 - present<span class="right">Seoul (South Korea)</span></small></h3>
+        <ul>
+            <li>Leading the development of a security-oriented program analysis engine for Web3 at <a href="https://chainlight.io/">ChainLight</a> team</li>
+            <li>Currently enlisted as a <a href="https://elaw.klri.re.kr/kor_service/jomunPrint.do?hseq=10572&cseq=235795">technical research personnel</a></li>
+        </ul>
+
+
         <hr>
         <h2>Education</h2>
 
-        <h3>Georgia Institute of Technology <small>Aug. 2019 - present<span class="right">Atlanta, Georgia (United States)</span></small></h3>
+        <h3>Georgia Institute of Technology <small>Aug. 2019 - May. 2022<span class="right">Atlanta, Georgia (United States)</span></small></h3>
         <ul class="dense">
-            <li>School of Computer Science, College of Computing</li>
-            <li>3rd year Ph.D. student in <a href="https://gts3.org">Systems Software & Security Lab (SSLab)</a>, advised by Professor <a href="https://taesoo.kim">Taesoo Kim</a></li>
+            <li>M.S. in Computer Science</li>
+            <li>On leave from a Ph. D. program due to compulsory military service</li>
+            <li>Member of <a href="https://gts3.org">Systems Software & Security Lab (SSLab)</a>, advised by Professor <a href="https://taesoo.kim">Taesoo Kim</a></li>
         </ul>
 
 
         <h3>Pohang University of Science and Technology (POSTECH) <small>Mar. 2015 - Feb. 2019<span class="right">Pohang (South Korea)</span></small></h3>
         <ul class="dense">
             <li>B.S. in Creative IT Engineering</li>
-            <li><strong>Summa Cum Laude</strong> and <strong>Valedictorian Honor</strong> (best GPA in class of 2019: 4.19 out of 4.3)</li>
+            <li><strong>Summa Cum Laude</strong> and <strong>Valedictorian Honor</strong> (best GPA in class of 2019)</li>
         </ul>
 
 
@@ -46,9 +58,17 @@
 
         <ol>
             <li>
+                <b>Spacelord: Private and Secure Smart Space Sharing</b>
+                Yechan Bae, Sarbartha Banerjee, Sangho Lee, Marcus Peinado.
+                <i>Proceedings of the 38th Annual Computer Security Applications Conference (ACSAC)</i>,
+                Austin, TX, USA, December 5-9, 2022.
+                [<a href="https://dl.acm.org/doi/abs/10.1145/3564625.3564637">paper</a>]
+                [<a href="https://project-spacelord.github.io/acsac22-ae/">artifact</a>]
+            </li>
+            <li>
                 <b>Rudra: Finding Memory Safety Bugs in Rust at the Ecosystem Scale</b>
                 Yechan Bae, Youngsuk Kim, Ammar Askar, Jungwon Lim, Taesoo Kim.
-                <i>In Proceedings of the 28th ACM Symposium on Operating Systems Principles (SOSP)</i>,
+                <i>Proceedings of the 28th ACM Symposium on Operating Systems Principles (SOSP)</i>,
                 Virtual Event, Germany, October 26-29, 2021.
                 (acceptance rate: 15.5% = 54/348)
                 [<a href="https://dl.acm.org/doi/10.1145/3477132.3483570">paper</a>]
@@ -61,11 +81,11 @@
 
 
         <hr>
-        <h2>Work Experience</h2>
+        <h2>Internship</h2>
 
         <h3>Microsoft Research, <strong>Research Intern</strong> <small>May. 2020 - Aug. 2020<span class="right">Remote (United States)</span></small></h3>
         <ul>
-            <li>Participated in a project about secure IoT smart space sharing</li>
+            <li>Participated in Spacelord project (see the Publication section)</li>
             <li>Implemented bare-metal provisioning and remote attestation on U-Boot to support authenticated booting in ARM SoCs</li>
         </ul>
 
@@ -90,27 +110,10 @@
         </ul>
 
 
-        <hr>
-        <h2>Research Interest</h2>
-
-        <h3>Scalable vulnerability detection</h3>
-        This topic is at the intersection of program analysis and software security, two fields that I have both enjoyed and excelled in.
-        Manual security auditing can find complicated new bugs, but it is hardly scalable in terms of time and human resource.
-        I'm extremely interested in automating such approach with fuzzing and static analysis,
-        so that we can prevent not only a single bug in a specific software
-        but also all bugs of the same class in all the current and the future software.
-
-        <h3>Abstraction Recovery</h3>
-        There is a huge gap between abstractions used in programming languages and machine code.
-        Typically, machine code does not contain any type information, struct definition, or inheritance hierarchy.
-        Furthermore, compilers might introduce additional disparity for optimization purpose.
-        Lost abstractions make understanding the core logic of programs harder, and reconstructing them can greatly help both human and machine analyzer.
-
-
         <hr class="no-screen">
-
-
         <hr class="page-break">
+
+
         <h2>Teaching Experience</h2>
 
         <ul class="dense">
@@ -130,7 +133,7 @@
 
         <h3>Scholarship</h3>
         <ul class="dense">
-            <li><b>Kwanjeong Study Abroad Scholarship</b> ($25,000/year) <small>2019 - present</small></li>
+            <li><b>Kwanjeong Study Abroad Scholarship</b> ($25,000/year) <small>2019 - 2022</small></li>
             <li><b>Samsung Software Membership</b> ($4,000/year) <small>2016 - 2019</small></li>
         </ul>
 
@@ -168,7 +171,7 @@
         I post my write-ups on <a href="https://github.com/Qwaz/solved-hacking-problem">GitHub</a>.
 
         <hr>
-        <footer>Updated at 2022-04-27<span class="no-screen">. Online version is available <a href="https://qwaz.github.io/resume/">here</a>.</span>
+        <footer>Updated at 2023-01-23<span class="no-screen">. Online version is available <a href="https://qwaz.github.io/resume/">here</a>.</span>
         </footer>
     </div>
 </div>
