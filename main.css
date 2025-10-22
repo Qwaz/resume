@@ -5,25 +5,27 @@ Typography
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v23/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v25/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/lato/v23/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/roboto/v49/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/roboto/v49/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmUiA8.ttf) format('truetype');
 }
 * {
   font-family: 'Roboto', sans-serif;
@@ -131,7 +133,7 @@ h2 {
   font-weight: 400;
   color: #3F51B5;
   margin-top: 0.6em;
-  margin-bottom: 0;
+  margin-bottom: 0.2em;
 }
 h3 {
   font-size: 16px;
@@ -144,7 +146,7 @@ h4 {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
-  margin-top: 0.8em;
+  margin-top: 0.4em;
   margin-bottom: 0;
 }
 a {
@@ -240,7 +242,8 @@ Content
 .content > ul,
 .content > ol {
   padding-left: 20px;
-  margin-top: 0.35em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
 }
 .content > ul.dense,
 .content > ol.dense {
@@ -259,15 +262,6 @@ Content
 .content > ol ul {
   padding-left: 0;
   list-style: none;
-}
-.content > ul ul ul,
-.content > ol ul ul {
-  padding-left: 1em;
-  margin-bottom: 0.4em;
-}
-.content > ul ul ul li,
-.content > ol ul ul li {
-  margin: 0;
 }
 .content > ol > li {
   margin-bottom: 0.5em;
