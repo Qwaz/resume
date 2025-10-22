@@ -259,9 +259,12 @@ Content
   margin: 0 0;
 }
 .content > ul ul,
-.content > ol ul {
-  padding-left: 0;
-  list-style: none;
+.content > ol ul,
+.content > ul ol,
+.content > ol ol {
+  padding-left: 20px;
+  margin-top: 0.15em;
+  margin-bottom: 0.15em;
 }
 .content > ol > li {
   margin-bottom: 0.5em;
